@@ -1,0 +1,20 @@
+.wrapper-heading-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%; }
+
+.column-container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black; }
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center; }
+
+.column {
+background-color: #ffff99; }
+
+.column-card-list {
+  min-height: 100px; }
