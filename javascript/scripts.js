@@ -22,11 +22,11 @@ $(function() {
       const $columnDelete = $('<button>').addClass('btn-delete').text('X');
       const $columnAddCard = $('<button>').addClass('add-card').text('Dodaj kartę');
 
-      $columnDelete.click(function() {
+      $columnDelete.on( "click", function() {
         self.removeColumn();
       });
 
-      $columnAddCard.click(function() {
+      $columnAddCard.on( "click", function() {
         self.addCard(new Card(prompt('Podaj nazwę karty')));
       });
 
@@ -57,7 +57,7 @@ $(function() {
       const $cardDescription = $('<p>').addClass('card-description').text(self.description);
       const $cardDelete = $('<button>').addClass('btn-delete').text('X');
 
-      $cardDelete.click(function() {
+      $cardDelete.on( "click", function() {
         self.removeCard();
       });
 
@@ -87,7 +87,7 @@ $(function() {
     }).disableSelection();
   }
 
-  $('.create-column').click(function() {
+  $('.create-column').on( "click", function() {
     const name = prompt('Enter column name'); //
     const column = new Column(name);
     board.addColumn(column); //
